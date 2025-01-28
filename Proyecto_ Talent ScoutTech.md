@@ -1,7 +1,7 @@
 # Parte 1 - SQLi
 
 - a) Comprobamos que en el directorio de /insert_player.php# nos aparece los campos `user` y `password`. Al meter en el campo de user ' " ' . Al ejecutar este comando nos salta el siguiente error:  
-![19461fa4603d92ab00cc002a80e359da.png](../../_resources/19461fa4603d92ab00cc002a80e359da.png)
+![19461fa4603d92ab00cc002a80e359da.png](img/ede9dabbb61c4b368ae20adab835c257.png)
 
 | Preguntas | Solución |
 | --- | --- |
@@ -81,8 +81,8 @@ a)
 | Introduzco el mensaje ...|  \<script>alert('Test')</script>|  
 | En el formulario de la página ... |  http://localhost:8080/add_comment.php?id=3 |  
 
-![70486c690e95e9d5076e647099498d37.png](../../_resources/70486c690e95e9d5076e647099498d37.png)
-![e6efd7678970d58e9c061e080c189758.png](../../_resources/e6efd7678970d58e9c061e080c189758.png)
+![70486c690e95e9d5076e647099498d37.png](img/1e79e6dee1f84daabef74606c56bab33.png)
+![e6efd7678970d58e9c061e080c189758.png](img/8a256f05fe3149388694c0b4c180d0a2.png)
 
 - b)
 Para que el link funcione correctamente ya que el navegador puede confundir y pensar que & forma parte del código del enlace. Añadiendo &amp el navegador sabe que esto significa & por lo que lo convierte y el enlace si funcionaría.
@@ -184,7 +184,7 @@ Las opciones que podemos hacer para asegurar el `register.php` son:
 ¿Se cumple esta condición?
 
 Como podemos comprobar si intentamos acceder a la URL nos sale un Forbidden por lo que de forma local no tendríamos acceso a dicha carpeta a través del navegador. 
-![217f09314a9367da3f7697585066e63f.png](../../_resources/217f09314a9367da3f7697585066e63f.png)
+![217f09314a9367da3f7697585066e63f.png](img/cb038f46238a470fad832a30d2036c40.png)
 
 En el hipotético caso de que si se pudiese entrar habría que modificar los permisos de los directorios del servicio donde este alojada nuestra aplicación como puede ser apache o nginx. 
 
@@ -224,10 +224,10 @@ Para realizar esta tarea insertaremos un botón con código HTML en el campo `Te
 <button><a href="http://web.pagos/donate.php?amount=100&receiver=attacker">Profile </a></button>
 ```
 
-![1d1813724c94bb11a9841d82c9905d94.png](../../_resources/1d1813724c94bb11a9841d82c9905d94.png)
+![1d1813724c94bb11a9841d82c9905d94.png](img/ab7c4092494942a4b4cc5af99949035b.png)
 
 Vemos que si enviamos la consulta y nos vamos a la lista de jugadores nos sale el botón: 
-![b642c34be514fdaeeae69998e432fb85.png](../../_resources/b642c34be514fdaeeae69998e432fb85.png)
+![b642c34be514fdaeeae69998e432fb85.png](img/92fe90791d904a44a04eefb8014e43b5.png)
 
 - b)
 
